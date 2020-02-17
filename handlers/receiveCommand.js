@@ -11,7 +11,7 @@ module.exports.handler = async event => {
   if (!ip || !ip.match(/\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/)) {
     return {
       statusCode: 200,
-      body: `IP \`${ip}\` inválido`
+      body: `Invalid IP \`${ip}\``
     }
   }
 
