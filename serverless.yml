@@ -1,0 +1,25 @@
+service: simple-slack-bot
+app: simple-slack-bot
+org: jpaulodev
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  receiveCommand:
+    handler: handlers/receiveCommand.handler
+    events:
+      - http: 
+          path: receive-command
+          method: post
+  handleButton:
+    handler: handlers/handleButton.handler
+    events:
+      - http: 
+          path: handle-button
+          method: post
+
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin

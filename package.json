@@ -1,0 +1,20 @@
+{
+  "name": "replicabot",
+  "version": "0.0.1",
+  "description": "Ask for replica database access",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hi@joaopaulo.dev",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^2.3.2",
+    "serverless-offline": "^5.11.0"
+  },
+  "dependencies": {
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "slack": "^11.0.2"
+  }
+}
